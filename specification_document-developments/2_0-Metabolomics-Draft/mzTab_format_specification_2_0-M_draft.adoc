@@ -83,21 +83,15 @@ The remainder of this document is structured as follows.
 
 The following cases of usage have driven the development of the mzTab data model, and are used to define the scope of the format in version 2.0.0.
 
-1. mzTab-M files should be simple enough to make metabolomics results accessible to people outside the respective fields. This should facilitate the sharing of data beyond the borders of the fields and make it accessible to non-experts.
+1.	mzTab-M files should be simple and flexible enough to make metabolomics and lipidomics results accessible to people both within and outside the respective fields. This should facilitate the sharing of data beyond the borders of the fields and make it accessible to non-experts. It should be possible to open mzTab-M files with “standard” software such as Microsoft Excel^®^ or Open Office Spreadsheet
 
-2. mzTab-M files should contain sufficient information to provide an electronic summary of all findings in a metabolomics study to permit its use as a standard documentation format for ‘supplementary material’ sections of publications in metabolomics. It should thus be able to replace PDF tables as a way of reporting small molecules and make published identification and quantification information more accessible.
+2.	mzTab-M files should contain sufficient information to provide an electronic summary of all findings in a metabolomics/lipidomics study to permit its use as a standard documentation format for ‘supplementary material’ sections of publications. It should thus be able to replace PDF tables as a way of reporting small molecules and make published identification and quantification information more accessible furthermore reducing the complexity of sharing and processing an experiment’s final results.
 
-3. mzTab-M files should enable reporting at different levels of detail: ranging from a simple summary of the final results to a detailed reporting including the experimental design.
+3.	mzTab-M files should enable reporting at different levels of detail: ranging from a simple summary of the final results to a detailed reporting including the experimental factors and conditions for statistical analysis, and where possible, units for measurements. mzTab-M files should be able to store quantitative values for small molecule/lipid identifications with directly link to their source spectrum in an external MS data file.
 
-4. It should be possible to open mzTab-M files with “standard” software such as Microsoft Excel^®^ or Open Office Spreadsheet. This should furthermore improve the usability of the format to people outside the fields of metabolomics.
+4.	mzTab-M files should make MS-derived results easily accessible to scripting languages allowing bioinformaticians to develop software without the overhead of developing sophisticated parsing code. Since mzTab-M files will be comparatively small, the data from multiple experiments can be processed at once without requiring special resource management techniques.
 
-5. mzTab-M files should make MS-derived results easily accessible to scripting languages allowing bioinformaticians to develop software without the overhead of developing sophisticated parsing code. Since mzTab-M files will be comparatively small, the data from multiple experiments can be processed at once without requiring special resource management techniques.
-
-6. It should be possible to contain the complete final results of an MS-based metabolomics experiment in a single file, with the exception that different ionisation modes SHOULD be captured in different files (see <<support-for-positive-and-negative-modes>>). This should furthermore reduce the complexity of sharing and processing an experiment’s final results.
-
-7. It should be useful as an output format by web-services that can then be readily accessed by tools supporting mzTab-M.
-
-8. It should be possible to directly link a small molecule record to its source spectrum in an external MS data file.
+5.	It should be useful as a standard format by web-services, web-applications and databases in addition to  readily accessed by tools supporting mzTab-M.
 
 
 [[notational-conventions]]
